@@ -31,12 +31,29 @@ body{
 	color:DarkRed;
 }
 
-.navbar{
+navbar{
 	width:100%;
-	overflow:hidden;
 	background:gray;
+	padding-left: 10%;
+	padding-right: 10%;
+	display: flex;
 	justify-content:space-between;
 	align-items:center;
+}
+
+.nav-button{
+	border: none;
+	background: transparent;
+	font-size: 22px;
+	font-weight: 600;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.nav-button:hover {
+	background-color: white;
 }
 
 ul{
