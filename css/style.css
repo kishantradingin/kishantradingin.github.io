@@ -9,9 +9,9 @@
 }
 
 body{
-	align-items:center;
-	background:;
-	}
+	align-items: center;
+	background: white;
+}
 
 .header{
 	display: flex;
@@ -31,7 +31,7 @@ body{
 	color:DarkRed;
 }
 
-navbar{
+.navbar{
 	width:100%;
 	background:gray;
 	padding-left: 10%;
@@ -56,46 +56,55 @@ navbar{
 	background-color: white;
 }
 
-ul{
-	padding:0;
-	margin:0 0 0 200px;
-	list-style:none;
-}
-
-li{
-	float:left;
-	width:200px;
-}
-
-li a{
-	width:150px;
-	display:block;
-	padding:20px 15px;
-	text-decoration:none;
-	font-family:arial;
-	font-weight:bold;
-	font-size:20px;
-	color:#301934;
-	text-align:center;
-}
-
-li a:hover{
-	background:gray;
-	text-transform:uppercase;
-}
-
-
-.mySlides {
-        display: none;
-		vertical-align:center;
-      }
-	  
 .slideshow-container {
-        margin:auto;
-		max-width:1200px;
-		box-shadow: 5px 5px 10px grey;
+	margin: 60px 12%;
+	justify-content: center;
+	box-shadow: 5px 5px 10px grey;
+}
 
-		}
+.slide-img{
+	height: 290px;
+	width: 100%;
+}
+
+h1 {
+	color: maroon;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.product{
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.products{
+	margin: 30px;
+	width: 32%;
+}
+
+.products-img{
+	width: 100%;
+	height: 250px;
+}
+
+
+.section {
+	width: 100%;
+	padding: 20px;
+	text-align:center;
+	line-height: 1.5;
+}
+
+.company-info{
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	justify-content: space-evenly;
+}
+	  
 
 /* Clearfix (clear floats) */
 .row::after {
@@ -137,19 +146,10 @@ li a:hover{
 
 .column:hover div{
     width: 150px;
-    padding: 8px 15px;    visibility: visible;
+    padding: 8px 15px;
+	visibility: visible;
     opacity: 0.7;        
 }
-
-.copyright{ 
-	width:1000px;
-	float:left; 
-	margin:0px;
-	text-align:center; 
-	font-size:19px;
-	padding:0px; 
-	color:white;
-	}
 
 .wrapper{
 	box-sizing:border-box;
@@ -212,14 +212,6 @@ li a:hover{
 
 .info-val{font-size:15px;color:blue;}
 
-.section {
-	text-align:center;
-}
-
-.section ul li{
-		margin-left:100px;
-}
-
 /* code of products page */
 
 .flip-card {
@@ -266,15 +258,16 @@ li a:hover{
 
 /* Style inputs */
 .formbox input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+  	margin-top: 6px;
+  	margin-bottom: 16px;
+  	resize: vertical;
 }
 
 .formbox input[type=submit] {
+
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -288,18 +281,22 @@ li a:hover{
 
 /* Style the container/contact section */
 .formbox {
-  box-sizing:border-box;
-  width:1250px;
-  height:700px;
+  box-sizing: border-box;
+  width: 82%;
   background: #fff;
   border:solid black;
   margin:auto;
 }
 
+.formbox .row1{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
 /* Create two columns that float next to eachother */
- .formbox .column1 {
-  float: left;
-  width: 50%;
+ .column1 {
+  width: 100%;
   margin-top: 6px;
   padding: 20px;
 }
@@ -454,9 +451,56 @@ li a:hover{
 	color:white;
 }
 
+.copyright{ 
+	width: 100%;
+	margin:0px;
+	text-align:center; 
+	font-size:19px;
+	padding:0px; 
+	color:white;
+}
+
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
+
+	.header{
+		flex-direction: column;
+	}
+
+	.navbar{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.nav-button{
+		font-size: 18px;
+		font-weight: 600;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+
+	.product{
+		flex-direction: column;
+	}
+
+	.products{
+		margin: 0 10%;
+		margin-bottom: 20px;
+		width: 80%;
+	}
+
+	.company-info{
+		flex-direction: column;
+	}
+
+	.formbox .row1{
+		display: flex;
+		flex-direction: column;
+	}
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
